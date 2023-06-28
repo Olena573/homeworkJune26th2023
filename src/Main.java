@@ -26,5 +26,7 @@ public class Main {
         //Here we used some methods of the class B.
 
 
+
+
     }
 }

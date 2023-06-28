@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;  // Import the Scanner class
 import java.util.Objects;
 public class ClassForTaskTwo {
+    //This is a class for the task 2. It contains enum with meal names. And "if" operators, written for work with it.
 
     public static void main (String [] args){
         //System.out.println(Time.Dinner.getValue());
@@ -33,9 +34,8 @@ public class ClassForTaskTwo {
                         (!mealTime.equals("Tea"))
 
                 ){
-            mealName = "else"; //this part of code continues to work instead of all other
-        }
-        else {
+            mealName = "else";
+        } else {
             mealName = "SomeMeal";
         }
 
@@ -72,7 +72,8 @@ public class ClassForTaskTwo {
    enum Time {
         //Here is an enum "Time" with description of Breakfast, Lunch, Dinner, and Supper Time.
         Breakfast("Time for breakfast is at morning, when you woke up."),
-        Lunch("Time for Lunch can be from 12:00 or 13:00 to 13:00 or 14:00. Europeans call it Dinner. "),
+        Lunch("Time for Lunch can be from 12:00 or 13:00 to 13:00 or 14:00." + '\n' +
+                "Europeans accept of British call it Dinner."),
         Dinner("Time for Dinner can be from 18:00 or 19:00 to 19:00 or 20:00. "),
         Supper("Supper is an evening meal. It goes after dinner. It can be between 17:00 and 22:00."),
        SomeMeal("If it is needed and you are hungry, you can eat a meal."),
